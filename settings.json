@@ -1,0 +1,7 @@
+[{
+    "type": "item",
+    "id": "tuneinStationIdName",
+    "label": "tuneinStationIdName",
+    "default": "AlexaRadioStationId",
+    "description": "Item which promotes the TuneIn Radio Station"
+}]

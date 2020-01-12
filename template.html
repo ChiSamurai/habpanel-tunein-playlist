@@ -1,0 +1,24 @@
+<style>
+    .spl-container {
+        height: 100%;
+        overflow: scroll;
+        padding: 24px 16px 16px 16px;
+        margin: 0 !important;
+    }
+
+    img {
+        max-width: 80%
+    }
+</style>
+<div class="spl-container template-container"
+    oc-lazy-load="['/static/TuneinStationRadioPlaylist/TuneinStationRadioPlaylist.js']">
+    <div class="spl" ng-controller="TuneinPlaylistController as tuneplaylist">
+        <div ng-repeat="playlistEntry in tuneplaylist.state.result">
+            <div id="cover">
+                <img src="{{ playlistEntry.cover }}" />
+            </div>
+            <div id="artist">{{ playlistEntry.artist }}</div>
+            <div id="title">{{ playlistEntry.title }}</div>
+        </div>
+    </div>
+</div>

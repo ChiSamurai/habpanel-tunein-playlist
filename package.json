@@ -1,0 +1,22 @@
+{
+  "name": "habpanel-tunein-playlist",
+  "version": "0.0.1",
+  "description": "HabPanel widget: Get and show playlist from external source for TuneIn station id",
+  "main": "TuneinStationRadioPlaylist.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiSamurai/habpanel-tunein-playlist.git"
+  },
+  "author": "Matthias Guth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChiSamurai/habpanel-tunein-playlist/issues"
+  },
+  "homepage": "https://github.com/ChiSamurai/habpanel-tunein-playlist#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

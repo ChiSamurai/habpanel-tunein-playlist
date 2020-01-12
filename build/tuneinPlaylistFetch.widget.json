@@ -1,0 +1,17 @@
+{
+  "template": "<style>    .spl-container {        height: 100%;        overflow: scroll;        padding: 24px 16px 16px 16px;        margin: 0 !important;    }    img {        max-width: 80%    }</style><div class=\\\"spl-container template-container\\\"    oc-lazy-load=\\\"['/static/TuneinStationRadioPlaylist/TuneinStationRadioPlaylist.js']\\\">    <div class=\\\"spl\\\" ng-controller=\\\"TuneinPlaylistController as tuneplaylist\\\">        <div ng-repeat=\\\"playlistEntry in tuneplaylist.state.result\\\">            <div id=\\\"cover\\\">                <img src=\\\"{{ playlistEntry.cover }}\\\" />            </div>            <div id=\\\"artist\\\">{{ playlistEntry.artist }}</div>            <div id=\\\"title\\\">{{ playlistEntry.title }}</div>        </div>    </div></div>",
+  "settings": [
+    {
+      "type": "item",
+      "id": "tuneinStationIdName",
+      "label": "tuneinStationIdName",
+      "default": "AlexaRadioStationId",
+      "description": "Item which promotes the TuneIn Radio Station"
+    }
+  ],
+  "name": "TuneIn Playlist fetcher & display",
+  "author": "Matthias Guth",
+  "description": "Get and show playlist from external source for TuneIn station id",
+  "source_url": "https://raw.githubusercontent.com/ChiSamurai/habpanel-tunein-playlist/master/build/tuneinPlaylistFetch.widget.json",
+  "readme_url": "https://github.com/ChiSamurai/habpanel-tunein-playlist"
+}
