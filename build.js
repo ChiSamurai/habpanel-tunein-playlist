@@ -14,7 +14,7 @@ var openHabJsonStructure = {
 
 var template = fs.readFileSync("template.html", "utf8");
 var settings = JSON.parse(fs.readFileSync("settings.json", "utf8"));
-var templatePrepared = template.replace(/\n|\t/g, '').replace(/\"/g, '\\"');
+var templatePrepared = template.replace(/\n|\t/g, '');
 
 var openHabJson = openHabJsonStructure;
 openHabJson.settings = settings;
